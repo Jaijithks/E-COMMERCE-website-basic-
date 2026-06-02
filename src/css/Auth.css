@@ -1,0 +1,79 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 86px);
+  padding: 2rem 1rem;
+  background: radial-gradient(circle at top right, rgba(245, 158, 11, 0.18), transparent 34%);
+}
+
+.auth {
+  width: min(520px, 100%);
+  background: #111827;
+  border: 1px solid rgba(245, 158, 11, 0.24);
+  border-radius: 30px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.35);
+}
+
+.auth form {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.heading {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  color: #fefae0;
+}
+
+.label1 {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: rgba(236, 232, 221, 0.85);
+}
+
+.auth input {
+  width: 100%;
+  border: 1px solid rgba(245, 158, 11, 0.22);
+  border-radius: 16px;
+  padding: 0.95rem 1rem;
+  font-size: 1rem;
+  color: #f8f7ee;
+  background: #111827;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.auth input:focus {
+  outline: none;
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.16);
+  background: #131a2e;
+}
+
+.auth button {
+  width: 100%;
+  border-radius: 16px;
+  padding: 1rem 1.1rem;
+  background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+  color: #111827;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.auth button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 40px rgba(124, 58, 237, 0.2);
+}
+
+.auth a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.auth a:hover {
+  text-decoration: underline;
+}

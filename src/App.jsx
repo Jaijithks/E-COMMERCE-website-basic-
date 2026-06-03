@@ -8,6 +8,7 @@ import Icon from './assets/hero.png'
 import About from './components/About'
 import Signup from './components/Signup'
 import { AuthContext } from './Context/AuthContext'
+import Products from './components/Products'
 
 function App() {
   const { user, logOut } = useContext(AuthContext);
@@ -39,6 +40,7 @@ function App() {
           <Route path='/Auth' element={<Auth />} />
           <Route path='/About' element={<About />} />
           <Route path='/signup' element={<Signup />} />
+          <Route path='/products/:id' element={<Products />}/>
         </Routes>
       </main>
     </BrowserRouter>

@@ -9,11 +9,13 @@ import About from './components/About'
 import Signup from './components/Signup'
 import { AuthContext } from './Context/AuthContext'
 import Products from './components/Products'
+import CartProvider from './Context/CartContext'
 
 function App() {
   const { user, logOut } = useContext(AuthContext);
 
   return (
+    <CartProvider>
     <BrowserRouter>
       <nav className='navBar'>
         <img src={Icon} className='icon' />
@@ -44,6 +46,7 @@ function App() {
         </Routes>
       </main>
     </BrowserRouter>
+    </CartProvider>
   );
 }
 

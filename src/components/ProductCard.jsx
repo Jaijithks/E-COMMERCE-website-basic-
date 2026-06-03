@@ -11,3 +11,4 @@ function ProductCard({product}){
                     </div>
     )
 }
+export default ProductCard;

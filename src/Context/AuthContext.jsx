@@ -3,7 +3,6 @@ import { createContext, useState } from "react";
 export const AuthContext = createContext(null);
 
 export default function AuthProvider({ children }) {
-  
     const stored = localStorage.getItem("currentUser");
     const [user, setUser] = useState(stored ? JSON.parse(stored) : null);
 
